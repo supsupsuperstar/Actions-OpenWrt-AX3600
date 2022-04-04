@@ -58,10 +58,11 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone $REPO_URL openwrt
+        #git clone $REPO_URL openwrt
+        unzip -d . $GITHUB_WORKSPACE/lede-e8cb010cecf0a9ba737960230608a59bd40c8492.zip
+        mv lede-e8cb010cecf0a9ba737960230608a59bd40c8492 openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        cd openwrt
-        git checkout e8cb010cecf0a9ba737960230608a59bd40c8492
+
         
     - name: Load custom feeds
       run: |
