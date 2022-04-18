@@ -64,6 +64,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
         git pull
+        rm -rf ./tmp && rm -rf .config
     
     - name: Cache
       uses: klever1988/cachewrtbuild@main
