@@ -19,6 +19,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 #git clone -b 18.06 https://github.com/r1172464137/luci-theme-edge.git package/luci-theme-edge
 
 # packages
+sed -i 's/src-git Boos https://github.com/Boos4721/OpenWrt-Packages.git/#/g' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/supsupsuperstar/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # 删除旧主题
