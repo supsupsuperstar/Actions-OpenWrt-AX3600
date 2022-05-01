@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/Boos4721/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: Boos4721/ax3600AP.config
+  CONFIG_FILE: Boos4721/ax3600-515.config
   DIY_P1_SH: Boos4721/diy-part1.sh
   DIY_P2_SH: Boos4721/diy-part2.sh
   UPLOAD_BIN_DIR: false
