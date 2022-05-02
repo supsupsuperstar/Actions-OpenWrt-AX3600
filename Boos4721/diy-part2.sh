@@ -17,8 +17,11 @@
 
 # 管理地址
 sed -i 's/10.10.10.1/192.168.31.1/g' package/base-files/files/bin/config_generate
-# 重置密码
+
+# Boos4721源专用，移除登录密码，wifi密码
 sed -i 's/root:$1$WplwC1t5$HBAtVXABp7XbvVjG4193B.:18753:0:99999:7:::/root::0:0:99999:7:::/g' package/base-files/files/etc/shadow
+sed -i "s/encryption=.*/encryption=none/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i "/key=.*/d" package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
