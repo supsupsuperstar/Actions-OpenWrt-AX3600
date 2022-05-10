@@ -18,8 +18,7 @@
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 #git clone -b 18.06 https://github.com/r1172464137/luci-theme-edge.git package/luci-theme-edge
 
-rm -rf ./package/lean/autocore
-git clone -b boos https://github.com/supsupsuperstar/autocore.git package/lean/autocore
+
 
 # packages
 #sed -i '$a src-git kenzo https://github.com/supsupsuperstar/openwrt-packages' feeds.conf.default
