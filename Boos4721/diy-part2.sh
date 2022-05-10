@@ -23,6 +23,9 @@ sed -i 's/root:$1$WplwC1t5$HBAtVXABp7XbvVjG4193B.:18753:0:99999:7:::/root::0:0:9
 sed -i "s/encryption=.*/encryption=none/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
 sed -i "/key=.*/d" package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
+rm -rf ./package/lean/autocore
+git clone -b boos https://github.com/supsupsuperstar/autocore.git package/lean/autocore
+
 # 默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 #sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' feeds/luci/collections/luci/Makefile
