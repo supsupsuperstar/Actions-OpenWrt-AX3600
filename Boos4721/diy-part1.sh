@@ -22,8 +22,8 @@ rm -rf ./package/lean/autocore
 git clone -b boos https://github.com/supsupsuperstar/autocore.git package/lean/autocore
 
 # packages
-sed -i '$a src-git kenzo https://github.com/supsupsuperstar/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+#sed -i '$a src-git kenzo https://github.com/supsupsuperstar/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # 删除旧主题
 rm -rf package/lean/luci-theme-argon
 
