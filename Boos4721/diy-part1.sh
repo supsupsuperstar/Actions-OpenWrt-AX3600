@@ -12,7 +12,8 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
+# 删除旧主题
+rm -rf package/lean/luci-theme-argon
 
 # 下载新主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
@@ -23,6 +24,5 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 # packages
 #sed -i '$a src-git kenzo https://github.com/supsupsuperstar/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-# 删除旧主题
-rm -rf package/lean/luci-theme-argon
+
 
