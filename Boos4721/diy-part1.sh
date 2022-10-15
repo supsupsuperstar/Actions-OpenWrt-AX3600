@@ -22,7 +22,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 
 
 # packages
-#sed -i '$a src-git kenzo https://github.com/supsupsuperstar/openwrt-packages' feeds.conf.default
-#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/supsupsuperstar/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 
