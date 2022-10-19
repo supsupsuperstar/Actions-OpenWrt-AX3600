@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/Boos4721/openwrt
+  REPO_URL: https://github.com/supsupsuperstar/openwrt-Boos4721
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Boos4721/ax3600-515-nss.config
@@ -58,7 +58,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone $REPO_URL openwrt
+        git clone -b 5.15.49 $REPO_URL openwrt
         #unzip -d . $GITHUB_WORKSPACE/lede-e8cb010cecf0a9ba737960230608a59bd40c8492.zip
         #mv lede-e8cb010cecf0a9ba737960230608a59bd40c8492 openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
